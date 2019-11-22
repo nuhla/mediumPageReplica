@@ -64,6 +64,5 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "nodemon": "^1.19.4"
-  },
-  "proxy": "http://localhost:3004"
+  }
 }
