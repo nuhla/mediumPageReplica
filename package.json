@@ -37,7 +37,7 @@
     "supertest": "^4.0.2"
   },
   "scripts": {
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix public && npm run build --prefix public",
+    "heroku-postbuild": "npm run build",
     "start": "node server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=node",
