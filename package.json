@@ -38,7 +38,7 @@
   },
   "scripts": {
     "start": "concurrently \"cd server npm run server\" \"react-scripts start\"",
-    "heroku-postbuild": "mpn run build",
+    "heroku-postbuild": "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=node",
     "eject": "react-scripts eject",
