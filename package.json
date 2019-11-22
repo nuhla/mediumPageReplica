@@ -38,7 +38,7 @@
     "supertest": "^4.0.2"
   },
   "scripts": {
-    "heroku-postbuild": "npm run build",
+    "heroku-postbuild": "react-scripts build",
     "start": "node server/server.js react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=node",
