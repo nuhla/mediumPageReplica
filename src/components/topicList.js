@@ -57,16 +57,17 @@ class TopicList extends React.Component {
           id: that.state.lastItemID || 0
         }
       })
-      .then(function (response) {
+      .then(function(response) {
         console.log(response.data[response.data.length - 1]["id"], "befor");
         that.lastItemID = response.data[response.data.length - 1]["id"];
+
         that.setState({
-          data: [...that.state.data, ...response.data],
+          data: [...that.state.data, ...response.data.shift(1, 1)],
           lastItemID: response.data[response.data.length - 1]["id"]
         });
         console.log(response.data[response.data.length - 1]["id"], "after");
       })
-      .catch(function (error) {
+      .catch(function(error) {
         console.log(error);
       });
   }
